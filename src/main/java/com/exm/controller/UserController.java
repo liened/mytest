@@ -66,14 +66,14 @@ public class UserController {
     @ApiOperation(value = "新增用户",notes = "从库")
     @ApiResponse(code = 200,message = "新增成功")
     @PostMapping("save")
-    public R save(@RequestBody User user){
+    public R save(@RequestBody @Valid User user){
         userService.save(user);
         return R.success();
     }
 
     @ApiOperation(value = "修改用户信息",notes = "Service自带的更新方法")
     @PostMapping("update")
-    public R update(@RequestBody User user){
+    public R update(@RequestBody @Valid User user){
         return userService.updateUser(user);
     }
 
