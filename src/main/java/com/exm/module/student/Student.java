@@ -1,4 +1,4 @@
-package com.exm.entity;
+package com.exm.module.student;
 
 import com.baomidou.mybatisplus.annotation.*;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
@@ -13,44 +13,42 @@ import java.util.Date;
 /**
  * @author yyx
  * @version 1.0
- * @createDate 2018-12-11 15:53
+ * @createDate 2018-12-20 11:30
  * @description
  */
 @Data
-@ApiModel("用户信息")
-@TableName("t_sys_user")
-public class User extends Model<User> {
+@TableName("t_student")
+@ApiModel("学生信息")
+public class Student extends Model<Student> {
 
-    @ApiModelProperty("用户的id")
-    @TableId(type = IdType.AUTO)
+    @TableId
+    @ApiModelProperty("id")
     private Integer id;
 
-    @ApiModelProperty("手机")
-    private String phone;
+    @TableField("s_name")
+    @ApiModelProperty("姓名")
+    private String sName;
 
-    @ApiModelProperty("用户姓名")
-    @TableField("user_name")
-    private String userName;
+    @TableField("class_id")
+    @ApiModelProperty("班级")
+    private Integer classId;
 
-    @ApiModelProperty("密码")
-    private String pwd;
-
-    @ApiModelProperty("年龄")
-    @TableField("age")
-    private Integer age;
+    @TableField("score")
+    @ApiModelProperty("分数")
+    private Integer score;
 
     @ApiModelProperty("删除标志 0-否 1-是")
     @TableField("del_flag")
     @TableLogic
     private Integer delFlag;
 
-    @ApiModelProperty("创建时间")
     @TableField(value = "create_time",fill = FieldFill.INSERT)
+    @ApiModelProperty("创建时间")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
     private Date createTime;
 
-    @ApiModelProperty("更新时间")
     @TableField(value = "update_time",fill = FieldFill.INSERT_UPDATE)
+    @ApiModelProperty("修改时间")
     @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss",timezone="GMT+8")
     private Date updateTime;
 

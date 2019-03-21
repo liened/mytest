@@ -1,7 +1,7 @@
 package com.exm.normal;
 
 import com.alibaba.druid.support.json.JSONUtils;
-import com.exm.entity.User;
+import com.exm.module.user.User;
 import org.junit.Test;
 
 import java.awt.Desktop;

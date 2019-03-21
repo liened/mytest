@@ -1,11 +1,10 @@
-package com.exm.service;
+package com.exm.module.user;
 
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.exm.common.R;
-import com.exm.dto.LoginDto;
-import com.exm.entity.Student;
-import com.exm.entity.User;
+import com.exm.module.dto.LoginDto;
+import com.exm.module.student.Student;
 import com.exm.util.Query;
 
 /**

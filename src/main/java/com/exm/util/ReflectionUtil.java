@@ -5,7 +5,7 @@
  *******************************************************************************/
 package com.exm.util;
 
-import com.exm.entity.User;
+import com.exm.module.user.User;
 import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.ClassUtils;
 import org.apache.commons.lang3.StringUtils;

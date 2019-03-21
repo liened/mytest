@@ -1,6 +1,6 @@
 package com.exm.normal;
 
-import com.exm.entity.User;
+import com.exm.module.user.User;
 import com.exm.mapper.UserMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;

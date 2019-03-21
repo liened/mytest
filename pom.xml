@@ -186,12 +186,6 @@
 				<springProfile>test</springProfile>
 			</properties>
 		</profile>
-		<profile>
-			<id>druid</id>
-			<properties>
-				<springProfile>druid</springProfile>
-			</properties>
-		</profile>
 	</profiles>
 
 	<build>
