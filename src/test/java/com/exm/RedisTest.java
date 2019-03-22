@@ -1,4 +1,4 @@
-package com.exm.normal;
+package com.exm;
 
 import com.exm.business.student.Student;
 import org.junit.Test;

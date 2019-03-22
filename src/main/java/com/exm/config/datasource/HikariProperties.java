@@ -4,7 +4,6 @@ import com.zaxxer.hikari.HikariConfig;
 import lombok.Data;
 
 import java.lang.reflect.Field;
-import java.util.stream.Stream;
 
 @Data
 public class HikariProperties {
@@ -26,7 +25,8 @@ public class HikariProperties {
         HikariConfig hikariConfig = new HikariConfig();
         if (t != null){
             Field[] fields = t.getClass().getDeclaredFields();
-            Stream.of(fields).forEach(field -> ReflectionUtil.invokeSetter(hikariConfig,field.getName(),ReflectionUtil.invokeGetter(t, field.getName())));
+            //TODO
+            //Stream.of(fields).forEach(field -> ReflectionUtil.invokeSetter(hikariConfig,field.getName(),ReflectionUtil.invokeGetter(t, field.getName())));
         }
         return hikariConfig;
     }
