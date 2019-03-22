@@ -7,12 +7,6 @@ import com.exm.business.dto.LoginDto;
 import com.exm.business.student.Student;
 import com.exm.util.Query;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-12 10:28
- * @description
- */
 public interface UserService extends IService<User> {
 
     /**

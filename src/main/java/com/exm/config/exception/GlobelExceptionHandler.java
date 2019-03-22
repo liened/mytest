@@ -8,12 +8,6 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-12 19:58
- * @description
- */
 @RestControllerAdvice
 @Slf4j
 public class GlobelExceptionHandler {

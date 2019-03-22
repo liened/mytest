@@ -10,12 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-20 16:30
- * @description
- */
 @Slf4j
 @Component
 public class RequestInterceptor extends HandlerInterceptorAdapter{

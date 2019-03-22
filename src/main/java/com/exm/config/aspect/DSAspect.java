@@ -13,12 +13,6 @@ import org.springframework.stereotype.Component;
 
 import java.lang.reflect.Method;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-12 17:35
- * @description
- */
 @Aspect
 @Component
 @Slf4j

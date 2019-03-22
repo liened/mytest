@@ -29,12 +29,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-12 10:28
- * @description
- */
 @Service
 @Slf4j
 public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements UserService{

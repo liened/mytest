@@ -9,12 +9,6 @@ import org.springframework.util.concurrent.ListenableFuture;
 
 import java.util.concurrent.ExecutionException;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2019-01-29 17:05
- * @description
- */
 @Slf4j
 @Component
 public class KafKaUtil {

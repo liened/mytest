@@ -1,11 +1,5 @@
 package com.exm.common;
 
-/**
- * @author yyx
- * @version 1.0
- * @description
- * @createDate 2019-03-14 17:59
- */
 public class UserSession {
 
     private static ThreadLocal<Long> local = new ThreadLocal<>();

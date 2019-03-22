@@ -14,7 +14,7 @@ import java.io.IOException;
 @Slf4j
 @Component
 //@ConfigurationProperties(prefix = "param.exclude")
-@WebFilter(urlPatterns = {"/api/*","/openApi/*"},filterName = "MyFilter")
+@WebFilter(urlPatterns = {"/aaa/*","/bbb/*"},filterName = "MyFilter")
 public class MyFilter implements Filter{
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -33,8 +33,8 @@ public class MyFilter implements Filter{
         try{
             HttpServletRequest request = (HttpServletRequest) servletRequest;
             String ip = request.getRemoteHost();
-            String token = request.getHeader("X-TOKEN");
-            String divice = request.getHeader("X-DIVICE");
+            String token = request.getHeader(MyHeader.MY_TOKEN);
+            String divice = request.getHeader(MyHeader.DIVICE);
 
             MyHeader myHeader = new MyHeader();
             myHeader.setToken(token);

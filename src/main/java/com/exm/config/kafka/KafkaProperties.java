@@ -4,12 +4,6 @@ import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2019-01-30 14:20
- * @description
- */
 @Data
 @Component
 @ConfigurationProperties("spring.kafka.consumer")

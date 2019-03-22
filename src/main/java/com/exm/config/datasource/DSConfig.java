@@ -12,12 +12,6 @@ import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-12 15:47
- * @description
- */
 @Configuration
 @EnableConfigurationProperties(HiKariConfigBean.class)
 public class DSConfig {

@@ -6,12 +6,6 @@ import lombok.Data;
 
 import javax.validation.constraints.NotEmpty;
 
-/**
- * @author yyx
- * @version 1.0
- * @description
- * @createDate 2019-03-14 17:15
- */
 @Data
 @ApiModel("登录参数")
 public class LoginDto {

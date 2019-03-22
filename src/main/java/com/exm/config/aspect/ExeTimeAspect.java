@@ -10,12 +10,6 @@ import org.aspectj.lang.reflect.CodeSignature;
 import org.aspectj.lang.reflect.MethodSignature;
 import org.springframework.stereotype.Component;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-20 17:00
- * @description
- */
 @Slf4j
 @Aspect
 @Component

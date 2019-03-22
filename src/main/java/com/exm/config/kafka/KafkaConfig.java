@@ -11,11 +11,6 @@ import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * kafka参数配置
- * 
- * @author wangyj
- */
 @Configuration
 public class KafkaConfig {
 

@@ -37,13 +37,6 @@ import java.util.List;
  *
  */
 
-/**
- *
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-11 15:26
- * @description
- */
 @Api(value = "维护用户信息",tags = "用户信息维护")
 @RestController
 @RequestMapping("/user")

@@ -26,10 +26,6 @@ import java.util.List;
  *      Active Record(活动记录)，是一种领域模型模式，特点是一个模型类对应关系型数据库中的一个表，而模型类的一个实例对应表中的一行记录。
  *      ActiveRecord 一直广受动态语言（ PHP 、 Ruby 等）的喜爱，而 Java 作为准静态语言，对于 ActiveRecord 往往只能感叹其优雅，
  *      所以 MP 也在 AR 道路上进行了一定的探索，仅仅需要让实体类继承 Model 类且实现主键指定方法，即可开启 AR 之旅。
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-11 15:26
- * @description
  */
 @Slf4j
 @Api(value = "维护学生信息",tags = "学生信息维护")

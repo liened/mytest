@@ -10,12 +10,6 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-20 11:30
- * @description
- */
 @Data
 @TableName("t_student")
 @ApiModel("学生信息")

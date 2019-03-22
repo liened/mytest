@@ -8,11 +8,6 @@ import java.util.Date;
 
 /**
  * mybatisplus 2.x的版本MetaObjectHandler是个类，在配置文件里面指定。3.x变成了一个接口,使用x使用Bean指定
- *
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-20 15:51
- * @description
  */
 @Component
 public class MyMetaObjectHandler implements MetaObjectHandler {

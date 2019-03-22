@@ -7,12 +7,6 @@ import lombok.Data;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2019-01-10 17:20
- * @description
- */
 @Data
 @ApiModel("用户学生信息")
 public class UserStudentDto {

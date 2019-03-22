@@ -10,12 +10,6 @@ import org.springframework.util.CollectionUtils;
 
 import java.util.List;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2019-01-22 16:29
- * @description
- */
 @Slf4j
 @Component
 public class MQConsumeMsgListenerProcessor implements MessageListenerConcurrently{

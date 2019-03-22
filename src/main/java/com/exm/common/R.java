@@ -2,12 +2,6 @@ package com.exm.common;
 
 import lombok.Data;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-12 20:00
- * @description   自定义返回的实体类
- */
 @Data
 public class R<T> {
 

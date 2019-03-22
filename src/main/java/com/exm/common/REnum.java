@@ -1,11 +1,5 @@
 package com.exm.common;
 
-/**
- * @author yyx
- * @version 1.0
- * @description
- * @createDate 2019-03-14 17:25
- */
 public enum REnum {
 
     Success(200,"成功"),

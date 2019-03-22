@@ -1,18 +1,11 @@
 package com.exm.config.datasource;
 
-import com.exm.util.ReflectionUtil;
 import com.zaxxer.hikari.HikariConfig;
 import lombok.Data;
 
 import java.lang.reflect.Field;
 import java.util.stream.Stream;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-12 16:17
- * @description
- */
 @Data
 public class HikariProperties {
 

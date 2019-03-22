@@ -11,12 +11,6 @@ import com.baomidou.mybatisplus.extension.plugins.PerformanceInterceptor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-12 20:31
- * @description
- */
 @Component
 public class MybatisPlusConfig {
 

@@ -8,12 +8,6 @@ import lombok.RequiredArgsConstructor;
 
 import java.io.Serializable;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-13 11:06
- * @description
- */
 @Data
 @AllArgsConstructor
 @RequiredArgsConstructor

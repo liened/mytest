@@ -2,12 +2,6 @@ package com.exm.config.exception;
 
 import lombok.Data;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-12 19:56
- * @description
- */
 @Data
 public class BusinessException extends RuntimeException{
 

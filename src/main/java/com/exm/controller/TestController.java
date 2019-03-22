@@ -4,12 +4,6 @@ import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-/**
- * @author yyx
- * @version 1.0
- * @description
- * @createDate 2019-03-13 14:10
- */
 @RestController
 @RequestMapping("/test")
 @Api(value = "测试的",tags = {"测试的controller"})

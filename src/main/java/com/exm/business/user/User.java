@@ -10,12 +10,7 @@ import lombok.Data;
 import java.io.Serializable;
 import java.util.Date;
 
-/**
- * @author yyx
- * @version 1.0
- * @createDate 2018-12-11 15:53
- * @description
- */
+
 @Data
 @ApiModel("用户信息")
 @TableName("t_sys_user")
