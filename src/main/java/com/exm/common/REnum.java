@@ -4,31 +4,27 @@ package com.exm.common;
  * @author yyx
  * @version 1.0
  * @description
- * @createDate 2019-03-14 17:25
+ * @createDate 2019-03-20 14:29
  */
 public enum REnum {
 
-    Success(200,"成功"),
-    Runtime_Error(201,"运行时错误"),
-    System_Error(500,"系统错误"),
-    Token_Not_Exist(501,"token不存在"),
-    Token_Error(502,"token验证错误"),
-    User_Not_Exist(1,"用户不存在"),
-    PWD_Error(2,"密码不正确"),
+    Success("200","操作成功"),
+    System_Error("500","系统错误"),
+    Operate_Fail("300","操作失败"),
     ;
 
-    private int code;
-    private String desc;
-    REnum(int code,String desc){
+    private String code;
+    private String message;
+
+    REnum(String code, String message){
         this.code = code;
-        this.desc = desc;
+        this.message = message;
     }
 
-    public int getCode(){
+    public String getCode(){
         return code;
     }
-
-    public String getDesc(){
-        return desc;
+    public String getMessage(){
+        return message;
     }
 }

@@ -1,57 +1,8 @@
-server:
-  port: 8085
-
 spring:
-  profiles: dev
-  application:
-    name: mytest-pro
   datasource:
-    hikari:
-      master:
-        jdbc-url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=GMT%2B8
-        username: root
-        password: root
-        auto-commit: false
-        connection-timeout: 30000
-        connection-test-query: SELECT 1
-        idle-timeout: 600000
-        minimum-idle: 50
-        max-lifetime: 180000
-        maximum-pool-size: 3
-        pool-name: master-hikari-pool
-      slave:
-        jdbc-url: jdbc:mysql://localhost:3306/test2?useUnicode=true&characterEncoding=utf-8&useSSL=false&zeroDateTimeBehavior=convertToNull&autoReconnect=true&serverTimezone=GMT%2B8
-        username: read
-        password: root
-        auto-commit: false
-        connection-timeout: 30000
-        connection-test-query: SELECT 1
-        idle-timeout: 600000
-        minimum-idle: 30
-        max-lifetime: 180000
-        maximum-pool-size: 10
-        pool-name: slave-hikari-pool
-  jpa:
-    show-sql: true
-  redis:
-    host: 127.0.0.1
-    port: 6379
-
-#rocketmq
-rocketmq:
-  producer:
-    isOnOff: on
-    groupName: myMqProducerGroup
-    namesrvAddr: 192.168.133.129:9876
-    maxMessageSize: 4096
-    sendMsgTimeout: 300000
-    retryTimesWhenSendFailed: 2
-  consumer:
-    ifOnOff: on
-    groupName: myMqConsumerGroup
-    namesrvAddr: 192.168.133.129:9876
-    topics: myTopic~*;
-    consumeThreadMin: 20
-    consumeThreadMax: 64
-    consumeMessageBatchMaxSize: 1
-
+    druid:
+      username: root
+      password: root
+      url: jdbc:mysql://localhost:3306/test2
+      db-type: com.alibaba.druid.pool.DruidDataSource
+      driver-class-name: com.mysql.cj.jdbc.Driver

@@ -5,37 +5,39 @@ import lombok.Data;
 /**
  * @author yyx
  * @version 1.0
- * @createDate 2018-12-12 20:00
- * @description   自定义返回的实体类
+ * @description
+ * @createDate 2019-03-20 14:24
  */
 @Data
 public class R<T> {
 
-    private int status;
+    private String code;
     private String message;
-    private Object data;
+    private T data;
 
-    public R(int status,String message,Object data){
-        this.status = status;
+    private R(String code,String message,T data){
+        this.code = code;
         this.message = message;
         this.data = data;
     }
-
-    public static <T> R success(){
-        return new R(REnum.Success.getCode(),"操作成功",null);
-    }
-
-    public static <T> R successWithData(Object data){
+    public static <T> R successWithData(T data){
         return new R(REnum.Success.getCode(),"",data);
     }
 
-    public static <T> R failure(REnum rEnum){
-        return new R(rEnum.getCode(),rEnum.getDesc(),null);
+    public static <T> R success(){
+        return new R(REnum.Success.getCode(),"",null);
     }
-    public static <T> R failureWithDetail(REnum rEnum, String message){
-        return new R(rEnum.getCode(),message,null);
+
+    public static <T> R fail(REnum renum){
+        return new R(renum.getCode(),renum.getCode(),null);
     }
-    public static <T> R failure(String message){
+
+    public static <T> R fail(String message){
         return new R(REnum.System_Error.getCode(),message,null);
     }
+
+    public static <T> R failWithDetail(REnum renum, String message){
+        return new R(renum.getCode(),message,null);
+    }
+
 }
