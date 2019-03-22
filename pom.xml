@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.exm</groupId>
-	<artifactId>sharding-demo</artifactId>
+	<artifactId>mytest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>sharding-demo</name>
+	<name>mytest</name>
 	<description>Demo project for Spring Boot</description>
 
 	<properties>
