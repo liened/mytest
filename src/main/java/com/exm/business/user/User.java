@@ -5,12 +5,6 @@ import lombok.Data;
 
 import java.time.LocalDateTime;
 
-/**
- * @author yyx
- * @version 1.0
- * @description
- * @createDate 2019-03-20 16:43
- */
 @Data
 @TableName("t_sys_user")
 public class User {

@@ -9,12 +9,6 @@ import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
-/**
- * @author yyx
- * @version 1.0
- * @description
- * @createDate 2019-03-20 16:55
- */
 @Data
 @ApiModel("用户参数")
 public class UserDto {

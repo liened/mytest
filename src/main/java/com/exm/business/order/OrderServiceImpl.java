@@ -9,12 +9,6 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
 
-/**
- * @author yyx
- * @version 1.0
- * @description
- * @createDate 2019-03-12 16:21
- */
 @Service
 public class OrderServiceImpl extends ServiceImpl<OrderMapper,Order> implements OrderService{
 

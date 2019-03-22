@@ -1,8 +1,5 @@
 package com.exm.business.order;
 
-//import io.swagger.annotations.ApiModel;
-//import io.swagger.annotations.ApiModelProperty;
-
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
@@ -10,12 +7,6 @@ import lombok.Data;
 import javax.validation.constraints.DecimalMin;
 import javax.validation.constraints.NotNull;
 
-/**
- * @author yyx
- * @version 1.0
- * @description
- * @createDate 2019-03-20 14:20
- */
 @Data
 @ApiModel
 public class OrderDto {

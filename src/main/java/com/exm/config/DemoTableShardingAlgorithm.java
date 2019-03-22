@@ -7,9 +7,6 @@ import java.util.Collection;
 
 /**
  * @description 分表策略，更分库的同
- * @author yyx
- * @version 1.0
- * @createDate 2019-03-20 11:48
  */
 public class DemoTableShardingAlgorithm implements PreciseShardingAlgorithm<Long>{
     @Override

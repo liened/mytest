@@ -7,9 +7,6 @@ import java.util.Collection;
 
 /**
  * @description 分库策略
- * @author yyx
- * @version 1.0
- * @createDate 2019-03-20 11:43
  */
 public class DemoDBShardingAlgorithm implements PreciseShardingAlgorithm<Long>{
 

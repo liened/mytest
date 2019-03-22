@@ -19,12 +19,6 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 import java.time.LocalDateTime;
 
-/**
- * @author yyx
- * @version 1.0
- * @description
- * @createDate 2019-03-12 16:10
- */
 @RestController
 @Api(value = "测试接口",tags = "订单")
 public class TestController {

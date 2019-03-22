@@ -2,12 +2,6 @@ package com.exm.common;
 
 import lombok.Data;
 
-/**
- * @author yyx
- * @version 1.0
- * @description
- * @createDate 2019-03-20 14:24
- */
 @Data
 public class R<T> {
 

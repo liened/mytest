@@ -6,12 +6,6 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
-/**
- * @author yyx
- * @version 1.0
- * @description
- * @createDate 2019-03-20 16:51
- */
 @Component
 public class MyMetaObjectHandler implements MetaObjectHandler{
 

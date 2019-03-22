@@ -7,12 +7,6 @@ import lombok.Data;
 import java.io.Serializable;
 import java.time.LocalDateTime;
 
-/**
- * @author yyx
- * @version 1.0
- * @description
- * @createDate 2019-03-12 15:16
- */
 @Data
 @TableName("t_order")
 public class Order extends Model<Order>{

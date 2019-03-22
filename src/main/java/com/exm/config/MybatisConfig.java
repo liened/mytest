@@ -1,11 +1,6 @@
 package com.exm.config;
 
-/**
- * @author yyx
- * @version 1.0
- * @description
- * @createDate 2019-03-20 15:09
- */
+
 //@Configuration
 //@EnableTransactionManagement
 //@MapperScan("com.exm.mapper")
