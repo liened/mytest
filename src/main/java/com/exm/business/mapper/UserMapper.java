@@ -1,7 +1,7 @@
-package com.exm.mapper;
+package com.exm.business.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.exm.module.user.User;
+import com.exm.business.user.User;
 
 /**
  * @author yyx

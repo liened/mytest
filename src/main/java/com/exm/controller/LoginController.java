@@ -1,8 +1,8 @@
 package com.exm.controller;
 
 import com.exm.common.R;
-import com.exm.module.dto.LoginDto;
-import com.exm.module.user.UserService;
+import com.exm.business.dto.LoginDto;
+import com.exm.business.user.UserService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

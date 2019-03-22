@@ -1,9 +1,9 @@
-package com.exm.mapper;
+package com.exm.business.mapper;
 
 //import com.baomidou.mybatisplus.mapper.BaseMapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.exm.module.student.Student;
+import com.exm.business.student.Student;
 
 /**
  * @author yyx

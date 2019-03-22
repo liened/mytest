@@ -1,4 +1,4 @@
-package com.exm.module.dto;
+package com.exm.business.dto;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;

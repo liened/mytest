@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 
 @SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
-@MapperScan("com.exm.mapper")
+@MapperScan("com.exm.business.mapper")
 @Slf4j
 public class MytestApplication implements CommandLineRunner{
 

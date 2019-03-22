@@ -1,4 +1,4 @@
-package com.exm.module.student;
+package com.exm.business.student;
 
 import com.baomidou.mybatisplus.annotation.*;
 import com.baomidou.mybatisplus.extension.activerecord.Model;

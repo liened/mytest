@@ -1,4 +1,4 @@
-package com.exm.module.user;
+package com.exm.business.user;
 
 
 import com.alibaba.druid.support.json.JSONUtils;
@@ -15,9 +15,9 @@ import com.exm.config.datasource.DSType;
 import com.exm.config.exception.BusinessException;
 import com.exm.config.header.MyHeader;
 import com.exm.config.header.RequestHeaderContext;
-import com.exm.module.dto.LoginDto;
-import com.exm.module.student.Student;
-import com.exm.mapper.UserMapper;
+import com.exm.business.dto.LoginDto;
+import com.exm.business.student.Student;
+import com.exm.business.mapper.UserMapper;
 import com.exm.util.Query;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

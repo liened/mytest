@@ -1,4 +1,4 @@
-package com.exm.module.user;
+package com.exm.business.user;
 
 import com.baomidou.mybatisplus.annotation.*;
 import com.baomidou.mybatisplus.extension.activerecord.Model;

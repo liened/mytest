@@ -1,6 +1,6 @@
 package com.exm.normal;
 
-import com.exm.module.student.Student;
+import com.exm.business.student.Student;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.redisson.api.RLock;
