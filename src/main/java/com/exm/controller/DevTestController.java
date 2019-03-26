@@ -1,10 +1,13 @@
 package com.exm.controller;
 
+import com.exm.business.order.Order;
 import com.exm.business.order.OrderDto;
 import com.exm.business.order.OrderService;
+import com.exm.business.order.QueryOrderDto;
 import com.exm.business.user.User;
 import com.exm.business.user.UserDto;
 import com.exm.business.user.UserService;
+import com.exm.common.Log;
 import com.exm.common.R;
 import com.exm.common.REnum;
 import io.swagger.annotations.Api;
@@ -21,7 +24,7 @@ import java.time.LocalDateTime;
 
 @RestController
 @Api(value = "测试接口",tags = "订单")
-public class TestController {
+public class DevTestController {
 
     @GetMapping("/")
     @ApiOperation("测试接口")
@@ -34,6 +37,17 @@ public class TestController {
 
     @Autowired
     private UserService userService;
+
+    @PostMapping("getOrder")
+    @ApiOperation("获取订单")
+    @Log
+    public R getOrder(@RequestBody @Valid QueryOrderDto dto){
+        if (dto.getId() == null && dto.getUserId() == null){
+            return R.fail("参数不能同时为空!");
+        }
+        Order order = orderService.lambdaQuery().eq(dto.getId()!=null,Order::getId, dto.getId()).eq(dto.getUserId()!=null,Order::getUserId, dto.getUserId()).one();
+        return R.successWithData(order);
+    }
 
     @PostMapping("/submit/order/")
     @ApiOperation("提交订单")
